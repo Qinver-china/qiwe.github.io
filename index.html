@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='mobile-web-app-capable' content='yes'>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<title>倾微科技 by:Qinver</title> 
+<link href="css/loading.css" rel="stylesheet"><!--===== 加载动画 ====-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet"><!--===== fa图标库 ====-->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"><!--===== 核心CSS ====-->
+<link href="css/neirong1.css" rel="stylesheet"><!--===== 滑动内容-1 ====-->
+<link href="css/neirong2.css" rel="stylesheet"><!--===== 滑动内容-2 ====-->
+<link href="css/neirong3.css" rel="stylesheet"><!--===== 滑动内容-3 ====-->
+<link href="css/responsive.css" rel="stylesheet"><!--===== 响应式css ====-->
+<link rel="shortcut icon" href="favicon.ico" >
+<link rel="apple-touch-icon-precomposed" href="favicon.ico">
+<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+ <!--===== 加载动画 =====-->
+<div class="preloader" id="loading">
+    <div id="loading-center">
+        <div class="spinner" id="loading-center-absolute">
+            <div class="double-bounce1 object" id="object_one"></div>
+            <div class="double-bounce1 object" id="object_two"></div>
+            <div class="double-bounce1 object" id="object_three"></div>
+            <div class="double-bounce1 object" id="object_four"></div>
+        </div>
+    </div>
+</div> <!--===== 加载动画 =====-->
+<div class="welcome-area"><!--======= 全局背景 =======-->
+  <div id="particles-js"></div><!--======= 背景动画 =======-->
+</div>
+ <!--===== 顶部区域 =====-->
+<header class="navbar custom-navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="logo">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" id="search-b">
+                            <i class="fa fa-cd fa-search"></i>
+                        </button>
+                        <button type="button" class="navbar-toggle menu-toggle1" data-toggle="collapse" data-target=".navbar-cd1">
+                           <i class="menu-t1"></i>
+                           <i class="menu-t2"></i>
+                           <i class="menu-t3"></i>
+                        </button>
+                    </div>
+                    <a class="animate one"><!--== logo ==-->
+                       <span>Q</span><span>i</span><span>n</span><span>v</span><span>e</span><span>r</span>
+                    </a>
+                </div>
+           </div>
+           <div class="col-md-9 col-sm-9 col-xs-12">
+                <nav class="main-menu">
+                    <div class="d1">  <!--== 搜索框 ==-->           
+                        <form method="get" action="http://www.google.com.hk/search" target=""> 
+                            <button type="search" name="sa" id="sbb"></button>   
+                            <input type="search"  name="q"  id="sbi" placeholder="Google">
+                            <input type="hidden" name="hl" value="zh-CN">
+                            <input type="hidden" name="sourceid" value="cndr">
+                        </form>
+                     </div>     
+                    <div class="caidan navbar-cd1 navbar-collapse collapse">
+                        <ul class="nav navbar-nav btn-group"> <!--== 菜单 ==-->
+                            <li class="find_nav click_off"><!--== 1级滑动内容菜单 ==-->
+                                <div class="find_nav_left navbar-collapse">
+                                    <div class="find_nav_list">
+                                       <ul class="nav navbar-nav btn-group" id="pagenavi1">
+                                          <li><a><i class="fa fa-skyatlas fa-f1 click_off"></i>主页</a></li>
+                                          <li><a><i class="fa fa-chain fa-f1 click_off"></i>智能家居</a></li>
+                                          <li><a><i class="fa fa-podcast fa-f1 click_off"></i>全部链接</a></li>
+                                          <li><a><i class="fa fa-user-circle-o fa-f1"></i>关于</a></li>
+                                       </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-1-1-2"><a class="menu-1 menu-1-1" id="tableList1"><i class="fa fa-home fa-f1"></i>家庭<span class="menu-b fa fa-caret-down"></span></a>
+                                <ul class="erji click_off" id="erji1"><!--== 二级菜单 ==-->
+                                    <li><a target="view_window" href="http://h.nas.qiwe.ink/?launchApp=SYNO.SDS.VideoStation.AppInstance#!Home"><i class="fa fa-play-circle fa-f"></i>视频库</a></li>
+                                    <li><a target="view_window" href="/file/"><i class="fa fa-file-text fa-f"></i>资源管理器</a></li>
+                                    <li><a target="view_window" href="/yun/"><i class="fa fa-cloud fa-f"></i>家庭云</a></li>
+                                    <li><a target="view_window" href="http://h.nas.qiwe.ink"><i class="fa fa-server fa-f"></i>群辉DSM</a></li>
+                                    <li><a target="view_window" href="http://amt.qiwe.ink"><i class="fa fa-globe fa-f"></i>AMT远程控制</a></li>
+                                    <li><a target="view_window" href="http://kly.qiwe.ink"><i class="fa fa-wifi fa-f"></i>斐讯路由</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-1-1-2"><a class="menu-1 menu-1-1" id="tableList2"><i class="fa fa-building fa-f1"></i>门店<span class="menu-b fa fa-caret-down"></span></a>
+                                <ul class="erji click_off" id="erji2"><!--== 二级菜单 ==-->
+                                    <li><a target="view_window" href="http://m.qiwe.ink/file/"><i class="fa fa-file-text fa-f"></i>资源管理器</a></li>
+                                    <li><a target="view_window" href="http://m.qiwe.ink/yun/"><i class="fa fa-cloud fa-f"></i>倾微云</a></li>
+                                    <li><a target="view_window" href="http://ly.qiwe.ink"><i class="fa fa-rss fa-f"></i>华硕路由</a></li>
+                                    <li><a target="view_window" href="http://qinver-qh.ddns.to:5000/"><i class="fa fa-server fa-f"></i>群辉DSM</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-1-1-2"><a class="menu-1 menu-1-1" id="tableList3"><i class="fa fa-tachometer fa-f1"></i>主题动画<span class="menu-b fa fa-caret-down"></span></a>
+                                <ul class="erji click_off" id="erji3"><!--== 二级菜单 ==-->
+                                    <li id="bjdh1"><a><i class="fa fa-codepen fa-f"></i>连线粒子</a></li>
+                                    <li id="bjdh2"><a><i class="fa fa-eercast fa-f"></i>霓虹斑斓</a></li>
+                                    <li id="bjdh3"><a><i class="fa fa-fire fa-f"></i>徐徐星空</a></li>
+                                    <li id="bjdh4"><a><i class="fa fa-ban fa-f"></i>关闭动画</a></li>
+                                    <li class="theme"><a><i class="fa fa-ge fa-f"></i>主题切换</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>                
+            </div>
+        </div>
+    </div>
+</header>    
+<!--======= 中心内容 =======-->
+
+<div id="slider1" class="swipe">
+  <ul class="box01_list">
+<!--====第一页内容结束===-->   
+    <li class="li_list">
+        <div class="list">
+        	<div>
+            <p class="Welcome-1">WELCOME</p>
+            <p class="Welcome-2">永远相信美好的事情即将发生</p>
+            <p class="Welcome-3">Always believe that good things are about to happen.</p>
+          </div>  
+        <div class="bdd" >
+            <a target="_blank" class="fa1 fa fa-server dh5 fa2 k1" href="http://h.nas.qiwe.ink"></a>
+            <a target="_blank" class="fa1 fa fa-file-text dh3 fa2 k3" href="/file/"></a>
+            <a target="_blank" class="fa1 fa fa-download dh9 fa2 k2" href="/ariang/"></a>
+            <a target="_blank" class="fa1 fa fa-home dh4 fa2 k5" href="http://ha.qiwe.ink"></a>
+            <a target="_blank" class="fa1 fa fa-cloud dh7 fa2 k6" href="/yun/"></a>
+            <a target="_blank" class="fa1 fa fa-list-alt dh10 fa2 k7" href="http://114.119.40.44:9112/cdlx/"></a>
+        </div></div>
+    </li><!--====第一页内容结束===-->
+    <li class="li_list" ><!--====智能家居内容开始===-->
+        <div class="list">
+        	<div id="hayz" class="hayzk">
+                 <div class="hazy fa fa-exclamation-circle"></div>
+
+        		<h5 id="l1" class="hayzwz">与智能家居服务器失去连接!  
+                <a class="hats fa fa-cogs" href="/HA接入测试.html"> 调试</a>
+                 </h5>
+
+        	</div>
+            <div id="halb1" class="hass-z">
+                 <h5 class="fzbt"><i class=""></i>家庭</h5> 
+                 <h5 id="p1" class="ha1"><i class="fa ha-fa fa-thermometer-3"></i>温度<i class="ha-unit">°C</i><i id="ha1" class="ha-state">···</i></h5>
+                 <h5 id="p2" class="ha1"><i class="fa ha-fa fa-tint"></i>湿度<i class="ha-unit">%</i><i id="ha2" class="ha-state">···</i></h5>
+                 <h5 id="p3" class="ha1"><i class="fa ha-fa fa-clock-o"></i>系统已运行<i class="ha-unit">小时</i><i id="ha3" class="ha-state">···</i></h5>
+                 <h5 id="p4" class="ha1"><i class="fa ha-fa fa-envira"></i>甲醛浓度<i class="ha-unit">mg/m³</i><i id="ha4" class="ha-state">···</i></h5>
+                 <h5 id="p5" class="ha1"><i class="fa ha-fa fa-empire"></i>PM2.5浓度<i class="ha-unit">μg/m³</i><i id="ha5" class="ha-state">···</i></h5>
+                 <h5 id="p6" class="ha1"><i class="fa ha-fa fa-lightbulb-o"></i>床头灯<i class="ha-unit"></i><i id="ha6" class="ha-state">···</i></h5>
+
+            </div>
+            <div id="halb2" class="hass-z">
+                 <h5 class="fzbt"><i class=""></i>客厅</h5>
+                 <h5  id="p21" class="ha1"><i class="fa ha-fa fa-thermometer-3"></i>温度<i class="ha-unit">°C</i><i id="ha21" class="ha-state">···</i></h5>
+                 <h5  id="p22" class="ha1"><i class="fa ha-fa fa-tint"></i>湿度<i class="ha-unit">%</i><i id="ha22" class="ha-state">···</i></h5>
+                 <h5  id="p23" class="ha1"><i class="fa ha-fa fa-lightbulb-o"></i>顶灯<i class="ha-unit"></i><i id="ha23" class="ha-state">···</i></h5>
+                 <h5  id="p24" class="ha1"><i class="fa ha-fa fa-lightbulb-o"></i>彩灯<i class="ha-unit"></i><i id="ha24" class="ha-state">···</i></h5>
+                 <h5  id="p25" class="ha1"><i class="fa ha-fa fa-lightbulb-o"></i>走廊灯<i class="ha-unit"></i><i id="ha25" class="ha-state">···</i></h5>
+                 <h5  id="p26" class="ha1"><i class="fa ha-fa fa-lightbulb-o"></i>氛围灯<i class="ha-unit"></i><i id="ha26" class="ha-state">···</i></h5>
+            </div>	
+        </div>
+    </li><!--====智能家居内容结束===-->
+	
+<!--====全部链接内容===-->
+    <li class="li_list">
+    <div class="list">
+        <div class="nc2_1">
+            <i class="nc_icon fa fa-sitemap"></i>
+            <div class="nc2_2">
+                <div class="nc2_3">
+                    <h5 class="nc2_btsm">局域网连接</h5>
+                    <h5 class="nc2_btsm2"><i class="fa fa-home"></i> 家庭</h5>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.10:5000">群晖DSM</a>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.10/file/">资源管理器</a>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.10:8123">智能家居</a>
+                    </br>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.10:16992">AMT远程控制</a>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.2">斐讯路由</a>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.10/yun/">云分享</a>
+                    <h5 class="nc2_btsm2"><i class="fa fa-building-o"></i> 门店</h5> 
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.10:5000/">群晖DSM</a>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.10:55/file/">资源管理器</a>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.10:55/yun/">倾微云</a>
+                    </br>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.1">华硕路由</a>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.111">移动店监控</a>
+                    <a target="view_window1" class="nc2_a" href="http://192.168.10.110">华为店监控</a>
+                </div>
+            </div>           
+        </div>
+        <div class="nc2_1">
+            <i class="nc_icon fa fa-puzzle-piece"></i>
+            <div class="nc2_2">
+                <div class="nc2_3">
+                    <h5 class="nc2_btsm">其他</h5>
+                    <h5 class="nc2_btsm2"><i class="fa fa-paperclip"></i> 资料信息</h5>      		
+                    <a target="view_window2" class="nc2_a" href="https://home-assistant.io/">Home Assistant</a>
+                    <a target="view_window2" class="nc2_a" href="http://qiwe.ink:7500">FRP控制台</a>
+                    <a target="view_window2" class="nc2_a" href="https://ddns.to">DDNS.TO</a>
+                    </br>
+                    <a target="view_window2" class="nc2_a" href="https://kiwivm.64clouds.com/main.php">搬瓦工控制台</a>
+                    <a target="view_window2" class="nc2_a" href="http://114.119.40.44:9112/cdlx/">龙翔双全系统</a>
+                    <h5 class="nc2_btsm2"><i class="fa fa-tags"></i> 网页收藏</h5>
+                    <a target="view_window2" class="nc2_a" href="https://account.aliyun.com/login/login.htm">阿里云控制台</a>
+                    <a target="view_window2" class="nc2_a" href="https://bbs.hassbian.com">瀚思彼岸</a>
+                    <a target="view_window2" class="nc2_a" href="https://doub.io">逗比根据地</a>
+                    </br>
+                    <a target="view_window2" class="nc2_a" href="https://www.youtube.com/">YouTube</a>
+                    <a target="view_window2" class="nc2_a" href="https://www.btdx8.com/">BT大熊</a>
+                    <a target="view_window2" class="nc2_a" href="http://www.bd-film.co/">BD影视</a>
+                     
+                </div>
+            </div>           
+        </div>
+    </div></li><!--====全部链接内容结束===-->
+	
+    <li class="li_list">
+	    <div class="list">
+        <div class="ab1">
+        	<div class="ab1_1">
+				  	<img class="ab_tx" src="images/tx.jpg">
+				  	<h5 class="ab1_a">倾微科技</h5>
+				  	<h5>
+				  		<i class="ab1_fa fa fa-weixin"></i>
+				  		<i class="ab1_fa fa fa-qq"></i>
+				  		<i class="ab1_fa fa fa-phone-square"></i>
+				  		<i class="ab1_fa fa fa-envelope-square"></i>
+				  		<i class="ab1_fa fa fa-weibo"></i>
+				  		<i class="ab1_fa fa fa-map-marker"></i>
+				   	</h5>
+					</div>
+            <div class="ab2">
+                <div class="ab3">
+                    <h5 class="ab3_btsm">About</h5>
+                    <h5 class="ab3_a"><i class="fa fa-tag"></i> 科技与数码</h5>
+                    <h5 class="ab3_btsm2">喜欢电子产品，最初从诺基亚开始，到现在的各种智能手机。</h5>
+                    <h5 class="ab3_a"><i class="fa fa-tag"></i> 软件与智能</h5>      		
+                    <h5 class="ab3_btsm2">对软件系统也有钻研，改点小程序，画点图什么的都挺简单的。这段时间智能家居挺好玩的，有意思！</h5>
+                    <h5 class="ab3_a"><i class="fa fa-tag"></i> 经营与管理</h5>      		
+                    <h5 class="ab3_btsm2">这是我工作的主要内容，上面的都是爱好。</h5>
+                </div>
+            </div>           
+        </div>
+	    </div>
+	</li>
+  </ul>
+</div>
+
+<!--======********** 滚动名言信息 *****************========-->
+<div id="review" class="review-section">
+     <div class="container">
+        <div class="row">   
+            <div class="review-full-area">
+                <div class="review-list">
+                    <div class="single-review"> <!-- start single carousel item -->
+                        <div class="review-content">
+                            <p>你必须十分努力，才能看上去毫不费劲</p>
+                        </div>
+                        <h5 class="author">You have to work very hard to seem effortless<span></span></h5>
+                    </div> <!-- end single carousel item -->
+                    <div class="single-review"> <!-- start single carousel item -->
+                        <div class="review-content">
+                            <p>人生，总会有不期而遇的温暖，和生生不息的希望</p>
+                        </div>
+                        <h5 class="author">Life, there will always be the unexpected warmth and the endless hope<span></span></h5>
+                    </div> <!-- end single carousel item -->
+                    <div class="single-review"> <!-- start single carousel item -->
+                        <div class="review-content">
+                            <p>不怕万人阻挡，只怕自己投降</p>
+                        </div>
+                        <h5 class="author">Not afraid of people blocking, I'm afraid their surrender<span></span></h5>
+                    </div> <!-- end start single carousel item -->
+                    <div class="single-review"> <!-- start single carousel item -->
+                        <div class="review-content">
+                            <p>无论你在什么时候开始，重要的是开始之后就不要停止</p>
+                        </div>
+                        <h5 class="author">No matter when you start, it is important not to stop after the start<span></span></h5>
+                    </div> <!-- end start single carousel item -->
+                    <div class="single-review"> <!-- start single carousel item -->
+                        <div class="review-content">
+                            <p>永远面向阳光，这样你就看不见阴影了</p>
+                        </div>
+                        <h5 class="author">Forever facing sunlight, so you can not see the shadow of the<span></span></h5>
+                    </div> <!-- end single carousel item -->
+                    <div class="single-review"> <!-- start single carousel item -->
+                        <div class="review-content">
+                            <p>每一个不曾起舞的日子，都是对生命的辜负</p>
+                        </div>
+                        <h5 class="author">Every day has not danced, All are life's disappointment<span></span></h5>
+                    </div> <!-- end single carousel item -->
+                    <div class="single-review"> <!-- start single carousel item -->
+                        <div class="review-content">
+                            <p>未来的你一定会感谢现在拼命的自己</p>
+                        </div>
+                        <h5 class="author">The future you will certainly thank yourself now desperately<span></span></h5>
+                    </div> <!-- end single carousel item -->                                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 底部版权区域 -->
+    <footer class="footer">
+        <div class="text-center">
+            <div class="footer-text" data-wow-delay="0.4s">
+                <p>Copyright © 2017-2017 Qinver Inc.All Rights Reserved. 
+                <a target="view_window" href="http://192.168.10.10/">
+                	<i class="fa fa-unlink"></i>
+                	</a>
+                	<a><i class="theme fa fa-ge"></i></a>
+                	</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- 底部版权区域结束 --><!-- 滑动按钮 -->
+<script type="text/javascript" src="js/touchslider.js"></script> <!-- JS滑动相应库 -->
+<script src="js/particles.js"></script>    <!-- 粒子动画库 -->
+<script src="js/b-animation.js"></script> <!-- 背景动画 -->
+<script src="js/bottom.js"></script>   <!-- 滑动中间内容按钮 -->
+<script src="js/hass.js"></script>   <!-- Home Assistant -->
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
