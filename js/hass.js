@@ -2,7 +2,7 @@ hass();
 setInterval(function() {hass()}, 10000); /*=刷新时间 =*/
 function hass() {
     $(document).ready(function hass() {
-        ws = new WebSocket('ws://ha.qiwe.ink/api/websocket'); /*=HA-api地址=*/
+        ws = new WebSocket('ws://xx.xx.xx/api/websocket'); /*=HA-api地址=*/
         ws.addEventListener('open', function(event) {
             ws.send('{"type": "auth","api_password": "XXXX"}'); /*=发送密码开始链接，没有密码删除此行=*/
             ws.send('{"id": 19,"type": "get_states"}')
