@@ -33,26 +33,6 @@ function ft(){
 
 }
 
-
-/*一言功能*/
-yylink = 'http://qiwe.ink/yiyan/qv-yiyan.php';
-
-for (var i = 1; i < 6; i++) {
-	$('#yiyan_e' + i).load(yylink)
-}
-yiyanxh();
-function yiyanxh() {
-	setTimeout(function yiyanfun() {
-		for (var i = 1; i < 6; i++) {
-			$('#yiyan_e' + i).fadeOut(280).load(yylink).fadeIn(380)
-		}
-		yiyanxh()
-	}, 30000)
-}
-$('#yiyan_e1,#yiyan_e2,#yiyan_e3,#yiyan_e4,#yiyan_e5').on('click', function() {
-	$(this).fadeOut(280).load(yylink).fadeIn(380)
-})
-
     /*===跟随时间切换主题===*/
 
     $("#halb1,#halb2").hide(300);
