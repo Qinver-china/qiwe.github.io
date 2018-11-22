@@ -55,17 +55,17 @@ function yiyanxh() {
 $('#yiyan_e1,#yiyan_e2,#yiyan_e3,#yiyan_e4,#yiyan_e5').on('click', function() {
 	$(this).fadeOut(280).load(yylink).fadeIn(380)
 })
-
+function($) {
     var $body = $("body"),
         $window = $(window);
     /*======预载======*/
-   $(window).load(function() {
+    $(window).on("load",function() {
         $('.spinner').fadeOut();
         $('.preloader').delay(350).fadeOut(500);
         $body.delay(350).css({
             'overflow': 'visible'
         });
-    });
+    });}
 
     /*=== LOGO点击动画  ===*/
     $('.one').on('click', function(e) {
