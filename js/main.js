@@ -35,7 +35,7 @@ function ft(){
 
 
 /*一言功能*/
-yylink = '/yiyan/qv-yiyan.php';
+yylink = 'http://qiwe.ink/yiyan/qv-yiyan.php';
 
 for (var i = 1; i < 6; i++) {
 	$('#yiyan_e' + i).load(yylink)
