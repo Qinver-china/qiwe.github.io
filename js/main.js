@@ -26,7 +26,7 @@ function dtwwhh() {
         }
     }
     /*===跟随时间切换主题===*/
-$(document).ready(function() {
+
     $("#halb1,#halb2").hide(300);
     var hours = new Date().getHours();
     if (hours > 18) {
@@ -36,13 +36,12 @@ $(document).ready(function() {
     } else {
         $(':root,.theme,.welcome-area').removeClass('th');
     }
-});
 
 (function($) {
     var $body = $("body"),
         $window = $(window);
     /*======预载======*/
-    $window.on('load', function() {
+   $(document).ready(function() {
         $('.spinner').fadeOut();
         $('.preloader').delay(350).fadeOut(500);
         $body.delay(350).css({
