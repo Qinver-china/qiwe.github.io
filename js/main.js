@@ -25,20 +25,17 @@ function dtwwhh() {
             });
         }
     }
-    /*===跟随时间切换主题===*/
 
-    $("#halb1,#halb2").hide(300);
-    var hours = new Date().getHours();
-    if (hours > 18) {
-        $(':root,.theme,.welcome-area').addClass('th');
-    } else if (hours < 8) {
-        $(':root,.theme,.welcome-area').addClass('th');
-    } else {
-        $(':root,.theme,.welcome-area').removeClass('th');
-    }
+
+function ft(){
+//alert(document.getElementById("myFrame").document);
+    document.getElementById("koyoz").contentWindow.document.getElementById("mobile05").style.width='100px';
+
+}
+
 
 /*一言功能*/
-yylink = 'http://qiwe.ink/yiyan/qv-yiyan.php';
+yylink = '/yiyan/qv-yiyan.php';
 
 for (var i = 1; i < 6; i++) {
 	$('#yiyan_e' + i).load(yylink)
@@ -55,17 +52,31 @@ function yiyanxh() {
 $('#yiyan_e1,#yiyan_e2,#yiyan_e3,#yiyan_e4,#yiyan_e5').on('click', function() {
 	$(this).fadeOut(280).load(yylink).fadeIn(380)
 })
-function($) {
+
+    /*===跟随时间切换主题===*/
+
+    $("#halb1,#halb2").hide(300);
+    var hours = new Date().getHours();
+    if (hours > 18) {
+        $(':root,.theme,.welcome-area').addClass('th');
+    } else if (hours < 8) {
+        $(':root,.theme,.welcome-area').addClass('th');
+    } else {
+        $(':root,.theme,.welcome-area').removeClass('th');
+    }
+
+
+(function($) {
     var $body = $("body"),
         $window = $(window);
     /*======预载======*/
-    $(window).on("load",function() {
+    $(document).ready(function() {
         $('.spinner').fadeOut();
         $('.preloader').delay(350).fadeOut(500);
         $body.delay(350).css({
             'overflow': 'visible'
         });
-    });}
+    });
 
     /*=== LOGO点击动画  ===*/
     $('.one').on('click', function(e) {
