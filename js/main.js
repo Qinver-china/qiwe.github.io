@@ -38,7 +38,7 @@ $(document).ready(function() {
     }
 });
 /*一言功能*/
-yylink = 'http://qiwe.ink/yiyan/qv-yiyan.php';
+yylink = '/yiyan/qv-yiyan.php';
 
 for (var i = 1; i < 6; i++) {
 	$('#yiyan_e' + i).load(yylink)
