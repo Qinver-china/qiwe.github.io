@@ -55,7 +55,7 @@ function yiyanxh() {
 $('#yiyan_e1,#yiyan_e2,#yiyan_e3,#yiyan_e4,#yiyan_e5').on('click', function() {
 	$(this).fadeOut(280).load(yylink).fadeIn(380)
 })
-(function($) {
+
     var $body = $("body"),
         $window = $(window);
     /*======预载======*/
