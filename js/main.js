@@ -50,7 +50,7 @@ function ft(){
     var $body = $("body"),
         $window = $(window);
     /*======预载======*/
-     $(window).on("load" function() {
+     $(window).on("load",function() {
         $('.spinner').fadeOut();
         $('.preloader').delay(350).fadeOut(500);
         $body.delay(350).css({
