@@ -11,7 +11,7 @@
     text-align: center; 
     color: var(--ys1);
     font-size: 28px;
-    letter-spacing: 8px;  /*====字体间距===*/
+    letter-spacing: 2px;  /*====字体间距===*/
     font-weight: 600;     /*====字体粗细===*/
 }
 .Welcome-3{
