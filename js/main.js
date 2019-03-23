@@ -35,7 +35,7 @@ function ft(){
 
 
 /*一言功能*/
-yylink = "https://api.xiaolin.in/hitokoto/?code=text";
+yylink = "https://v1.hitokoto.cn/?c=f&encode=text";
 
 for (var i = 1; i < 6; i++) {
 	$('#yiyan_e' + i).load(yylink)
