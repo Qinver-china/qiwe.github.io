@@ -7,7 +7,7 @@
 	--ys6: #311d07;
 	--ys7: #00868B;
 	--ys8: #f5540a;
-	--ysb1: rgba(251, 250, 250,.5);
+	--ysb1: rgba(255, 255, 255,.3);
 	--ysb2: rgba(129, 176, 128,.08);
 	--ysb3: rgba(130, 126, 171,.08);
 	--ysb4: rgba(255, 255, 255,.4);
@@ -26,10 +26,10 @@
 	--ys6: #BEBEBE;
 	--ys7: #bdbdbd;
 	--ys8: #f5540a;
-	--ysb1: rgba(0, 0, 0,.7);
+	--ysb1: rgba(0, 0, 0,.2);
 	--ysb2: rgba(99, 236, 10,.04);
 	--ysb3: rgba(189, 46, 31,.06);
-	--ysb4: rgba(0, 0, 0,.3);
+	--ysb4: rgba(0, 0, 0,.1);
 	--ysb5: rgba(0, 0, 0,.6);
 	--ysb6: rgba(0, 0, 0, 0.7);
 	--ysb7: rgba(10, 10, 10,.7)
@@ -54,8 +54,8 @@ p{margin:0}
 .swiper-container{width:100%;height:inherit}
 .swiper-slide{text-align:center}
 section{width:100%;height:120%;margin-top:-20%;padding-top: 20%;}
-.background-img.th{background:url(../img/intro-bg.jpg) #0a4253;-webkit-background-size:cover;background-size:cover;background-position:center}
-.background-img{background:url(../img/b-bg.jpg) #a4b8db;position:fixed;z-index:-1;left:0;top:0;width:130%;height:130%;-webkit-background-size:cover;background-size:cover;background-position:center}
+.background-img.th{background:url(../img/intro-bg.svg) #0a4253;-webkit-background-size:cover;background-size:cover;background-position:center}
+.background-img{background:url(../img/b-bg.svg) #a4b8db;position:fixed;z-index:-1;left:0;top:0;width:130%;height:101%;-webkit-background-size:cover;background-size:cover;background-position:center}
 .background-img:after{content:"";width:100%;height:100%;position:absolute;background:var(--ysb1)}
 .neirong{overflow: hidden;overflow-y:auto;transition:all .2s;-webkit-overflow-scrolling:touch}
 .neirong p{margin-bottom:.2em}
